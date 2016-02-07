@@ -40,8 +40,8 @@ public class GreetingController {
         Account mainAccount = client.getAccount();
         CallFactory callFactory = mainAccount.getCallFactory();
         Map<String, String> callParams = new HashMap<String, String>();
-        callParams.put("To", "+447590566866"); // Replace with your phone number
-        callParams.put("From", "+441212852673"); // Replace with a Twilio number
+        callParams.put("To", "+44XXXXXXXXXX"); // Replace with your phone number
+        callParams.put("From", "+44XXXXXXXXXX"); // Replace with a Twilio number
         callParams.put("Url", "http://demo.twilio.com/welcome/voice/");
         // Make the call
         Call call = callFactory.create(callParams);
